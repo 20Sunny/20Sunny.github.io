@@ -1,0 +1,262 @@
+@media (max-width: 1120px) {}
+
+@media (max-width: 992px) {
+    .design-box {
+        width: 75%;
+    }
+
+    .design-box.d1 {
+        right: -12%;
+    }
+
+    .design-box.d2 {
+        left: -12%;
+    }
+
+    .slider_section .carousel-indicators {
+        display: none;
+    }
+
+    .footer_bg {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .design-box {
+        top: initial;
+        transform: none;
+        width: 100%;
+    }
+
+    .design-box.d1 {
+        right: initial;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    .design-box.d2 {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .animation-element {
+        transform: translateX(-50%) rotate(0deg);
+        transition: all 3.5s ease-in-out;
+    }
+
+    .animation-element.in-view {
+        transform: translateX(-50%) rotate(360deg);
+    }
+
+    .slider_section {
+        margin-top: 0;
+    }
+
+    .slider_section .detail-box h1 {
+        text-align: center;
+    }
+
+    .slider_section .img-box {
+        margin-top: 125px;
+    }
+
+    .slider_section .more_btn {
+        justify-content: center;
+    }
+
+    .about_section {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .about_section .img-box {
+        margin: 125px 0;
+    }
+
+    .our_section .img-box {
+        margin: 75px 0;
+    }
+
+    .girl_section {
+        margin-top: 145px;
+    }
+
+    .boy_section {
+        margin-top: 125px;
+    }
+
+    .girl_section .img-box {
+        margin-top: 45px;
+        margin-bottom: 75px;
+    }
+
+    .guitar_section {
+        margin-top: 90px;
+    }
+
+    .guitar_section .img-box {
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .time_section {
+        overflow: hidden;
+    }
+
+    .time_section .detail-box {
+        margin: 75px 0;
+    }
+
+    .time_section .container {
+        padding-top: 0;
+    }
+
+    .time_section .detail-box {
+        margin-bottom: 175px;
+        padding: 0 15px;
+    }
+
+    .time_section .time_box {
+        margin-bottom: 90px;
+    }
+
+    .client_section {
+        margin-top: 0;
+    }
+
+    .client_section .detail-box {
+        margin-top: 45px;
+    }
+
+    .contact_section {
+        padding-bottom: 110px;
+        overflow: hidden;
+    }
+
+    .contact_section .design-box.d1 {
+        width: 145%;
+        bottom: -15%;
+    }
+
+    .contact_section .detail-box {
+        margin-bottom: 50px;
+    }
+
+    .map_section {
+        overflow: hidden;
+    }
+
+    .map_section .design-box.d2 {
+        top: -30%;
+        width: 120%;
+    }
+
+    .common_section-style .img-box {
+        margin: 45px 0;
+        margin-bottom: 25%;
+    }
+
+    .info_section .row>div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 35px;
+
+    }
+
+    .info_section .info_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map_section {
+
+        margin-top: 90px;
+        padding-top: 145px;
+    }
+
+    .map_section {
+        padding-bottom: 0;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .client_section .design-box.d2 {
+        width: 550px;
+    }
+
+    .contact_section .form_container {
+        width: 100%;
+    }
+
+    .contact_section .design-box.d1 {
+        width: 845px;
+    }
+
+    .contact_section .detail-box {
+        margin-bottom: 125px;
+    }
+
+    .map_section .design-box.d2 {
+        top: -18%;
+    }
+
+    .slider_section {
+        padding: 45px 0;
+    }
+
+    .common_section-style .img-box {
+        margin-bottom: 45%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .slider_section .design-box.d1 {
+        width: 125%;
+        bottom: -10%;
+    }
+
+
+}
+
+@media (max-width: 420px) {
+    .time_section .design-box.d1 {
+
+        width: 420px;
+        bottom: 35px;
+    }
+
+    .slider_section .img-box {
+
+        margin-top: 75px;
+
+    }
+
+    .map_section .design-box.d2 {
+        width: 145%;
+
+    }
+
+    .common_section-style .img-box {
+        margin-bottom: 175px;
+
+    }
+}
+
+@media (max-width: 376px) {}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
+}
