@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <!-- ==========color change==================== -->
-    <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <style type="text/css" media="print">
@@ -772,11 +771,11 @@
                     <!-- ------------------------------CONTACT FORM START-------------------------------- -->
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <form action="mailto:sunnysharma7601@gmail.com" method="post" enctype="text/plain">
+                            <form action="mailto:sunnysharma7601@gmail.com" method="post" name="suForm" id="supform" enctype="text/plain">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
@@ -788,7 +787,7 @@
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                            <input type="text" name="subject" id="pass" class="form-control" placeholder="Subject" required>
                                         </div>
                                     </div>
                                 </div>
@@ -802,7 +801,7 @@
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <button type="submit" class="btn col-6">Send Message  <i class="fa fa-check"></i></button>
+                                            <button type="submit" class="btn col-6" id="submit-btn" onmouseover="mouseOver()">Send Message  <i class="fa fa-check"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -854,6 +853,73 @@
         <!-- ========================STYLE SWITCHER END====================== -->
 
     </div>
+
+    <script>
+        var a = 0;
+
+        function mouseOver() {
+
+            const name = document.forms['suForm']['name'].value;
+            const email = document.forms['suForm']['email'].value;
+            const pass = document.forms['suForm']['pass'].value;
+            const tick = document.querySelector('#check');
+
+            const emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+
+            if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 0) {
+                buttonMoveLeft();
+                a = 1;
+                return false;
+            }
+
+            if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 1) {
+                buttonMoveRight();
+                a = 2;
+                return false;
+            }
+
+            if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 2) {
+                buttonMoveLeft();
+                a = 1;
+                return false;
+            } else {
+
+                // document.getElementById('submit-btn').click();  
+                document.getElementById('submit-btn').style.cursor = 'pointer';
+                return false;
+            };
+
+        };
+
+
+
+
+        function buttonMoveLeft() {
+
+            const button = document.getElementById('submit-btn');
+            button.style.transform = 'translateX(350%)';
+
+        };
+
+
+        function buttonMoveRight() {
+
+            const button = document.getElementById('submit-btn');
+            button.style.transform = 'translateX(0%)';
+
+        };
+
+
+        function resetBtn() {
+            const button = document.getElementById('submit-btn');
+            button.style.transform = 'translateX(0%)';
+        };
+    </script>
+
+
+
     <script>
         function chcolo() {
             collo = document.getElementById('colorch').value;
