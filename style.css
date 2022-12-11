@@ -895,7 +895,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.3);
+    box-shadow: 0 0 10px var(--skin-color);
 }
 
 .contact .contact-form .form-item textarea.form-control {
@@ -916,6 +916,10 @@ h3.my-profession {
     color: var(--skin-color);
     font-size: 10px;
     font-weight: 700;
+}
+
+:root {
+    --skin-color: #ff0000;
 }
 
 @media (max-width:1225px) {
