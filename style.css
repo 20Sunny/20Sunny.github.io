@@ -394,7 +394,8 @@ li {
 .aside .nav li a.active {
     color: var(--skin-color);
     background-color: var(--bg-black-900);
-    transform: scale(1.25);
+    transform: scale(1.1);
+    border: 2px solid var(--skin-color);
 }
 
 .aside .nav li a i {
