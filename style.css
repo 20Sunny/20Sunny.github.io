@@ -7,6 +7,15 @@
     --text-black-700: #504e70;
 }
 
+input,
+textarea {
+    caret-color: var(--skin-color);
+}
+
+*::-webkit-input-placeholder {
+    color: var(--skin-color);
+}
+
 /*=============================================*/
 .style-switcher {
     position: fixed;
