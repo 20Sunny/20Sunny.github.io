@@ -209,6 +209,10 @@ ul {
     z-index: 2;
     opacity: 1;
     animation: slideSection .25s ease;
+    border-bottom: 3px solid var(--skin-color);
+    border-right: 3px solid var(--skin-color);
+    border-top: 2px solid var(--skin-color);
+    border-left: 1px solid var(--skin-color);
 }
 
 @keyframes slideSection {
@@ -317,7 +321,10 @@ ul {
     top: 0;
     padding: 30px;
     height: 100%;
-    border-right: 1px solid var(--bg-black-50);
+    border-right: 1px solid var(--skin-color);
+    border-bottom: 3px solid var(--skin-color);
+    border-left: 2px solid var(--skin-color);
+    border-top: 2px solid var(--skin-color);
     display: flex;
     justify-content: center;
     align-items: center;
