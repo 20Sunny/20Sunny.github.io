@@ -902,6 +902,7 @@ h3.my-profession {
 }
 
 .contact .contact-form .form-item .form-control:focus {
+    border: 2px solid var(--bg-black-900);
     box-shadow: 0 0 10px var(--skin-color);
 }
 
