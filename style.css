@@ -916,10 +916,20 @@ h3.my-profession {
 }
 
 .credit {
-    position: relative;
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    background: transparent;
+    color: var(--skin-color);
+}
+
+.credit2 {
+    position: absolute;
+    right: 0;
     flex: 0 0 100%;
     max-width: 100%;
-    padding: 20px;
+    padding: -10px;
     background: transparent;
     color: var(--skin-color);
     font-size: 10px;
