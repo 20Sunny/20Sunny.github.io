@@ -18,11 +18,51 @@
             visibility: hidden;
         }
     </style>
+<style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: lightgray;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+        }
+        
+        .loader iframe {
+            height: 100%;
+            width: 100%;
+            /* background: transparent; */
+        }
+        
+        .disppear {
+            animation: vanish 5s forwards;
+        }
+        
+        @keyframes vanish {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+
 </head>
 
 
 <body>
-    
+    <div class="loader">
+        <iframe src="./alert.html"></iframe>
+    </div>
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
     <!-- ======MAIN CONTAINER START======== -->
     <div class="main-container">
@@ -1068,5 +1108,14 @@
 
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
 </body>
+<script>
+    let loader = document.querySelector('.loader');
+
+    window.addEventListener("load", vanish);
+
+    function vanish() {
+        loader.classList.add("disppear")
+    }
+</script>
 
 </html>
