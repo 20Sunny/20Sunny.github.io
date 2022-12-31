@@ -56,6 +56,7 @@
     </style>
     </head>
     <body>
+        <div class="cursor"></div>
     <div class="loader">
         <iframe src="./alert.html"></iframe>
     </div>
@@ -1109,6 +1110,32 @@
     </script>
 
     <noscript>Sorry, your browser does not support JavaScript!</noscript>
+<script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout;
+
+        //follow cursor on mousemove
+        document.addEventListener("mousemove", (e) => {
+            let x = e.pageX;
+            let y = e.pageY;
+
+            cursor.style.top = y + "px";
+            cursor.style.left = x + "px";
+            cursor.style.display = "block";
+
+            //cursor effects when mouse stopped
+            function mouseStopped() {
+                cursor.style.display = "none";
+            }
+            clearTimeout(timeout);
+            timeout = setTimeout(mouseStopped, 10000);
+        });
+
+        //cursor effects when mouseout
+        document.addEventListener("mouseout", () => {
+            cursor.style.display = "none";
+        });
+    </script>
 </body>
 <script>
     let loader = document.querySelector('.loader');
