@@ -16,6 +16,40 @@ textarea {
     color: var(--skin-color);
 }
 
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background: var(--skin-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px var(--skin-color), 0 0 60px var(--skin-color), 0 0 100px var(--skin-color);
+    animation: colors 3.5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 40px;
+    height: 40px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
 /*=============================================*/
 .style-switcher {
     position: fixed;
@@ -166,6 +200,8 @@ body {
     font-size: 16px;
     user-select: none !important;
     font-family: 'poppins' sans-serif;
+    height: 100vh;
+    cursor: none;
 }
 
 * {
