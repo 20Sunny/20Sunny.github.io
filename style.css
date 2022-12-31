@@ -201,8 +201,8 @@ body {
     user-select: none !important;
     font-family: 'poppins' sans-serif;
     height: 100vh;
-    cursor: none !important;
-    pointer-events: none !important;
+    cursor: none;
+/*     pointer-events: none !important; */
 }
 
 * {
