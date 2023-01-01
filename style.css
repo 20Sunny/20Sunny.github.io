@@ -86,7 +86,7 @@ textarea {
     right: 100%;
     border: 1px solid var(--bg-black-50);
     margin-right: 25px;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.5s ease;
     border-radius: 50%;
     line-height: 40px;
@@ -121,7 +121,7 @@ textarea {
     display: inline-block;
     border: 1px solid var(--bg-black-50);
     border-radius: 50%;
-    cursor: pointer;
+    cursor: none;
     transition: transform 0.5s;
 }
 
@@ -162,7 +162,7 @@ textarea {
     height: 35px;
     border: 1px solid var(--bg-black-50);
     border-radius: 50%;
-    cursor: pointer;
+    cursor: none;
 }
 
 #colorch::-webkit-color-swatch {
@@ -851,7 +851,7 @@ h3.my-profession {
     border: 6px solid var(--bg-black-100);
     overflow: hidden;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: none;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
