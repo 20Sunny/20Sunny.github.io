@@ -1061,12 +1061,6 @@
         }
     </script>
     <script>
-        window.oncontextmenu = function() {
-            alert(' ! ! !  Not Allowed  ! ! ! ');
-            return false;
-        }
-    </script>
-    <script>
         window.onoffline = function() {
             alert(" ! ! !  YOU ARE NOT CONNECTED TO THE INTERNET  ! ! ! ");
             document.getElementById('amca').hidden = true;
@@ -1075,7 +1069,7 @@
     </script>
     <script>
         window.ononline = function() {
-            alert("! ! !  YOU BACK TO ONLINE  ! ! !", "YOU ARE CONNECTED TO INTERNET ", "success");
+            alert("! ! !  YOU BACK TO ONLINE  ! ! !");
             document.getElementById('amca').hidden = false;
             return false;
         }
