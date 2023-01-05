@@ -97,6 +97,14 @@
         return false;
     }
 </script>
+    <script>
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "s" && (e.ctrlKey || e.metaKey)) {
+                e.preventDefault();
+                alert("Taking screenshots is not allowed on this website!");
+            }
+        });
+    </script>
 <script type="text/javascript">
     const cursor = document.querySelector(".cursor");
     var timeout;
