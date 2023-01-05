@@ -370,7 +370,7 @@ ul {
 
 .aside .logo {
     position: absolute;
-    top: 50px;
+    top: 5%;
     font-size: 30px;
     text-transform: capitalize;
 }
@@ -397,7 +397,7 @@ ul {
     border-bottom: 5px solid var(--skin-color);
     border-left: 5px solid var(--skin-color);
     rotate: 180deg;
-    left: 130px;
+    left: 100px;
     top: 40px;
     bottom: 5;
     right: 10;
