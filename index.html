@@ -1062,7 +1062,7 @@
     </script>
     <script>
         window.oncontextmenu = function() {
-            alert(' ! ! !  Not Allowed  ! ! ! ', 'USER SELECT NOT ALLOWED', 'error');
+            alert(' ! ! !  Not Allowed  ! ! ! ');
             return false;
         }
     </script>
@@ -1140,6 +1140,14 @@
         //cursor effects when mouseout
         document.addEventListener("mouseout", () => {
             cursor.style.display = "none";
+        });
+    </script>
+<script>
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "s" && (e.ctrlKey || e.metaKey)) {
+                e.preventDefault();
+                alert(" ! ! !    NOT    ALLOWED    ! ! ! ");
+            }
         });
     </script>
 </body>
