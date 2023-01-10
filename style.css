@@ -67,7 +67,7 @@ textarea {
 }
 
 .style-switcher:hover {
-    transform: translateX(-5px);
+    transform: translateX(0);
 }
 
 .style-switcher .fa-3x,
