@@ -14,7 +14,6 @@ textarea {
 *::-webkit-input-placeholder {
     color: var(--skin-color);
 }
-
 .cursor {
     z-index: 999;
     position: fixed;
