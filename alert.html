@@ -68,7 +68,8 @@
         Loading <span class="typing"></span>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script src="./typed.js"></script>
 <script>
     var typed = new Typed(".typing", {
         strings: [" . . ."],
@@ -101,7 +102,7 @@
         document.addEventListener("keydown", function(e) {
             if (e.key === "s" && (e.ctrlKey || e.metaKey)) {
                 e.preventDefault();
-                alert("Taking screenshots is not allowed on this website!");
+                alert("Save this Page is not allowed on this website!");
             }
         });
     </script>
