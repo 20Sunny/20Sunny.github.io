@@ -54,10 +54,15 @@ anchor.forEach(function(obj) {
 });
 
 window.ononline = function() {
-    alert("! ! !  YOU BACK TO ONLINE  ! ! !", "YOU ARE CONNECTED TO INTERNET ", "success");
+    alert("! ! !  YOU BACK TO ONLINE  ! ! !", "YOU ARE CONNECTED TO INTERNET ");
     document.getElementById('amca').hidden = false;
     return false;
 }
+
+window.oncontextmenu = function() {
+            alert("  ! ! !  NOT ALLOWED  ! ! !  ");
+            return false;
+        }
 
 window.onoffline = function() {
     alert(" ! ! !  YOU ARE NOT CONNECTED TO THE INTERNET  ! ! ! ");
@@ -145,65 +150,3 @@ function chcolo() {
     collo = document.getElementById('colorch').value;
     document.documentElement.style.setProperty("--skin-color", collo);
 }
-
-var a = 0;
-
-function mouseOver() {
-
-    const name = document.forms['suForm']['name'].value;
-    const email = document.forms['suForm']['email'].value;
-    const pass = document.forms['suForm']['pass'].value;
-    const tick = document.querySelector('#check');
-
-    const emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-
-
-    if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 0) {
-        buttonMoveLeft();
-        a = 1;
-        return false;
-    }
-
-    if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 1) {
-        buttonMoveRight();
-        a = 2;
-        return false;
-    }
-
-    if ((name == "" || !email.match(emailCheck) || pass == "" || tick.checked == false) && a == 2) {
-        buttonMoveLeft();
-        a = 1;
-        return false;
-    } else {
-
-        // document.getElementById('submit-btn').click();  
-        document.getElementById('submit-btn').style.cursor = 'none';
-        return false;
-    };
-
-};
-
-
-
-
-function buttonMoveLeft() {
-
-    const button = document.getElementById('submit-btn');
-    button.style.transform = 'translateX(200%)';
-
-};
-
-
-function buttonMoveRight() {
-
-    const button = document.getElementById('submit-btn');
-    button.style.transform = 'translateX(0%)';
-
-};
-
-
-function resetBtn() {
-    const button = document.getElementById('submit-btn');
-    button.style.transform = 'translateX(0%)';
-};
