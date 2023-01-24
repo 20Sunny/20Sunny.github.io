@@ -922,4 +922,12 @@
 <script src="./typed.js"></script>
 <script src="./come.js"></script>
 <script src="./vanila.js"></script>
+<script>
+    document.addEventListener("keydown", e => {
+        if (e.key === "s" && (e.ctrlKey || e.metaKey)) {
+            e.preventDefault();
+            alert("Taking screenshots is not allowed on this website!");
+        }
+    });
+</script>
 </html>
