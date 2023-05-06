@@ -469,15 +469,14 @@ li {
 
 .social-media-icon a {
     margin: 40px;
-    color: var(--skin-color);
+    color: var(--text-black-900);
     transition-duration: 0.5s;
 }
 
 .social-media-icon a:hover {
-    color: rgb(121, 114, 114);
-    transform: scale(1.35);
+    color: var(--skin-color);
+    transform: scale(1.3);
 }
-
 
 /* ======home====== */
 
