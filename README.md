@@ -24,13 +24,13 @@ This repository contains a modern and attractive portfolio webpage built using p
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/portfolio-webpage.git
+   git clone https://github.com/20Sunny/20Sunny.github.io.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd portfolio-webpage
+   cd 20Sunny.github.io
    ```
 
 3. Open the `index.html` file in your preferred web browser.
@@ -40,7 +40,6 @@ This repository contains a modern and attractive portfolio webpage built using p
 The following resources were used in the creation of this webpage:
 
 - [Font Awesome](https://fontawesome.com/) - Icons for the UI
-- [Unsplash](https://unsplash.com/) - Images for the portfolio section
 - [Animate.css](https://animate.style/) - CSS animation library
 - [jQuery](https://jquery.com/) - JavaScript library
 
