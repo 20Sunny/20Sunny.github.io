@@ -17,7 +17,6 @@ This repository contains a modern and attractive portfolio webpage built using p
 ## Screenshots
 
 ![Screenshot 1](./a.png)
-![Screenshot 2](screenshots/screenshot2.png)
 
 ## Usage
 
