@@ -226,6 +226,12 @@ ul {
     list-style: none;
 }
 
+.col{
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+}
+
 .section {
     background: var(--bg-black-900);
     min-height: 100vh;
