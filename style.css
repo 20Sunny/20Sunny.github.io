@@ -763,15 +763,16 @@ h3.my-profession {
 
 
 /* =======================service======================= */
-
 .service .container {
     padding-bottom: 40px;
 }
 
 .service .service-item {
+    display: grid;
+    gap: 20px;
     margin-bottom: 30px;
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .service .service-item .service-item-inner {
@@ -780,37 +781,12 @@ h3.my-profession {
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
+    display: flex;
     transition: all 0.5s ease;
 }
 
 .service .service-item .service-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.3);
-}
-
-.service .service-item .service-item-inner .icon {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 30px;
-    text-align: center;
-    transition: all 0.5s ease;
-}
-
-.service .service-item .service-item-inner .icon .fa {
-    font-size: 40px;
-    line-height: 60px;
-    color: var(--skin-color);
-    transition: all 0.5s ease;
-}
-
-.service .service-item .service-item-inner:hover .icon {
-    background: var(--skin-color);
-}
-
-.service .service-item .service-item-inner:hover .icon .fa {
-    font-size: 25px;
-    color: white;
 }
 
 .service .service-item .service-item-inner h4 {
@@ -826,7 +802,6 @@ h3.my-profession {
     color: var(--text-black-700);
     line-height: 25px;
 }
-
 
 /* ==========================PORTFOLIO====================================== */
 
