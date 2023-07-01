@@ -1,5 +1,8 @@
-# Portfolio Webpage
-https://20sunny.netlify.app
+<p align="center">
+  <h1 align="center">PORTFOLIO
+  <br><a href='https://20sunny.netlify.app' align="center">View</a>
+  </h1>
+</p>
 
 This repository contains a modern and attractive portfolio webpage built using pure HTML, CSS, and JavaScript. The webpage features a responsive design, multiple themes including dark and light mode, a live working contact form, an about section showcasing your qualifications, experience, and current working status, as well as a preloader for a smooth loading experience. Additionally, there is a dedicated slide to showcase your exotic projects and another slide to display your past work.
 
