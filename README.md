@@ -1,6 +1,6 @@
 <p align="center">
   <h1 align="center">PORTFOLIO
-  <br><a href='https://20sunny.netlify.app' align="center" style='padding:10px;border:1px solid #fff;'><h6>View</h6></a>
+  <br><a href='https://20sunny.netlify.app' align="center"><h6>View</h6></a>
   </h1>
 </p>
 
