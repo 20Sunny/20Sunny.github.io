@@ -20,6 +20,8 @@ This repository contains a modern and attractive portfolio webpage built using p
 ## Screenshots
 
 ![Screenshot 1](./a.png)
+## URL Animation
+![image](https://github.com/20Sunny/20Sunny.github.io/assets/119580558/cfb66aaa-f302-4849-877e-0077c6795603)
 
 ## Usage
 
