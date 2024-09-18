@@ -792,7 +792,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.3);
+    box-shadow: 0 0 50px -30px var(--text-black-700);
 }
 
 .service .service-item .service-item-inner h4 {
