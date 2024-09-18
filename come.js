@@ -32,14 +32,14 @@ document.addEventListener("mouseout", () => {
 });
 
 var typed = new Typed(".typingso", {
-    strings: ["Web Developer", "Freelancer", "Web Designer", "Python Developer", "Full-Stack Developer"],
+    strings: ["Relationship Manager","Bussiness Associate","Web Developer", "Freelancer", "Web Designer", "Python Developer", "Full-Stack Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
 })
 
 var typed = new Typed(".typing", {
-    strings: ["Web Developer", "Freelancer", "Web Designer", "Python Developer", "Full-Stack Developer"],
+    strings: ["Relationship Manager","Bussiness Associate","Web Developer","Freelancer", "Web Designer", "Python Developer", "Full-Stack Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
