@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./name.css">
     <!-- ==========color change====================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style type="text/css" media="print">
         BODY {
             display: none;
@@ -880,7 +879,7 @@
                         <!-- contact info end -->
                         <!-- contact info start -->
                         <div class="contact-info-item padd-15">
-                            <a target="_blank" style="text-decoration: none;" href="mailto:sunnysharma7601@gmail.com">
+                            <a style="text-decoration: none;" href="mailto:sunnysharma7601@gmail.com">
                                 <div class="icon"><i class="fa fa-envelope"></i></div>
                                 <h4>E-mail</h4>
                                 <p>Sunnysharma7601<br>@gmail.com</p>
@@ -890,7 +889,35 @@
                         <!-- contact info start -->
                         <div class="contact-info-item padd-15">
                                 <div class="icon">
-                                    <i class="fa fa-ellipsis"></i>
+                                    <div class="navigation">
+                                        <span style="--i:0;--x:-1;--y:0;">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </span>
+                                        <span style="--i:1;--x:1;--y:0;">
+                                            <i class="fa-brands fa-x-twitter"></i>
+                                        </span>
+                                        <span style="--i:2;--x:0;--y:-1;">
+                                            <i class="fa-brands fa-github"></i>
+                                        </span>
+                                        <span style="--i:3;--x:0;--y:1;">
+                                            <i class="fa-brands fa-telegram"></i>
+                                        </span>
+                                        <span style="--i:4;--x:1;--y:1;">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </span>
+                                        <span style="--i:5;--x:-1;--y:-1;">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                        </span>
+                                        <span style="--i:6;--x:0;--y:0;">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </span>
+                                        <span style="--i:7;--x:-1;--y:1;">
+                                            <i class="fa-brands fa-snapchat"></i>
+                                        </span>
+                                        <span style="--i:8;--x:1;--y:-1;">
+                                            <i class="fa-brands fa-threads"></i>
+                                        </span>
+                                      </div>
                                 </div>
                                 <h4>More</h4>
                                 <p>Way to Reach to Me</p>
@@ -985,10 +1012,18 @@
         </div>
         <!-- ========================STYLE SWITCHER END====================== -->
     </div>
+</body>
     <script defer src="./btn.js"></script>
     <script defer src="./typed.js"></script>
     <script defer src="./come.js"></script>
     <script defer src="./vanila.js"></script>
+    <script>
+        const navigation = document.querySelector(".navigation");
+
+navigation.addEventListener("click", () => {
+  navigation.classList.toggle("active");
+});
+    </script>
     <script>
         document.addEventListener("keydown", e => {
             if (e.key === "s" && (e.ctrlKey || e.metaKey)) {
@@ -1032,5 +1067,60 @@ urlAnimate(); // Start the animation
 
 
 </script>
+<style>
+.navigation {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+  }
+  .navigation.active {
+    width: 200px;
+    background: var(--bg-black-100);
+    height: 200px;
+    transition-delay: 0s;
+  }
+  
+  .navigation span {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--skin-color);
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+  }
+  .navigation.active span {
+    width: 45px;
+    height: 45px;
+    background: var(--bg-black-50);
+    transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+  }
+  
+  .navigation span i {
+    transition: 0.5s;
+    font-size: 0px !important;
+  }
+  
+  .navigation.active span i {
+    font-size: 20px !important;
+    color: var(--skin-color);
+  }
+  .navigation.active span:hover i {
+    color: #2dfc52;
+    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52)
+      drop-shadow(0 0 15px #2dfc52);
+  }</style>
 <script src="./tilt.js"></script>
 </html>
