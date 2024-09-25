@@ -119,3 +119,84 @@ h3>.magic>.magic-text {
     font-family: "Rubik", sans-serif;
     transition: color 600ms;
 }
+
+
+.navigation {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+.navigation.active {
+    width: 200px;
+    background: var(--bg-black-100);
+    border: 2px solid var(--skin-color);
+    box-shadow: 0 0 10px var(--skin-color);
+    height: 200px;
+    transition-delay: 0s;
+}
+.navigation span {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--skin-color);
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+.navigation.active span {
+    width: 45px;
+    height: 45px;
+    background: var(--bg-black-900);
+    box-shadow: 0 0 10px 1px var(--bg-black-50);
+    transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+}
+.navigation span i {
+    transition: 0.5s;
+    font-size: 0 !important;
+}
+.navigation.active span i {
+    font-size: 20px !important;
+    color: var(--skin-color);
+}
+.navigation.active .whatsapp:hover a i {
+    color: #25D366;
+    filter: drop-shadow(0 0 2px #25D366) drop-shadow(0 0 5px #25D366) drop-shadow(0 0 15px #25D366);
+}
+.navigation.active .instagram:hover a i {
+    color: #E1306C;
+    filter: drop-shadow(0 0 2px #E1306C) drop-shadow(0 0 5px #E1306C) drop-shadow(0 0 15px #E1306C);
+}
+.navigation.active .twitter:hover a i,
+.navigation.active .github:hover a i,
+.navigation.active .thread:hover a i {
+    color: var(--text-black-900);
+    filter: drop-shadow(0 0 2px var(--text-black-900)) drop-shadow(0 0 5px var(--text-black-900)) drop-shadow(0 0 15px var(--text-black-900));
+}
+.navigation.active .telegram:hover a i {
+    color: #0088cc;
+    filter: drop-shadow(0 0 2px #0088cc) drop-shadow(0 0 5px #0088cc) drop-shadow(0 0 15px #0088cc);
+}
+.navigation.active .facebook:hover a i {
+    color: #1877F2;
+    filter: drop-shadow(0 0 2px #1877F2) drop-shadow(0 0 5px #1877F2) drop-shadow(0 0 15px #1877F2);
+}
+.navigation.active .linkedin:hover a i {
+    color: #0A66C2;
+    filter: drop-shadow(0 0 2px #0A66C2) drop-shadow(0 0 5px #0A66C2) drop-shadow(0 0 15px #0A66C2);
+}
+.navigation.active .snapchat:hover a i {
+    color: #FFFC00;
+    filter: drop-shadow(0 0 2px #FFFC00) drop-shadow(0 0 5px #FFFC00) drop-shadow(0 0 15px #FFFC00);
+}
