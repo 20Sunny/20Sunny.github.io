@@ -370,7 +370,7 @@
                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
                 <li><a href="#service" style="background: linear-gradient(to right, rgb(138, 35, 135), rgb(233, 64, 87), rgb(242, 113, 33));color: #fff;display:flex;align-items: center;padding: 7px 20px;">
-                    <img style="width: 32px;" src="https://raw.githubusercontent.com/20Sunny/DALL-E/89468acf8450a1a760b8b9a4b51246c865fdbb7b/client/src/assets/earth.svg">
+                    <img data-tilt style="width: 32px;" src="https://raw.githubusercontent.com/20Sunny/DALL-E/89468acf8450a1a760b8b9a4b51246c865fdbb7b/client/src/assets/earth.svg">
                     <x style="padding-left: 15px;">AIVANA</x></a></li>
             </ul>
         </div>
@@ -419,7 +419,7 @@
                             <a href="https://github.com/20sunny" class="fa-brands fa-github fa-bounce"></a>
                         </div> -->
                         <div class="home-img">
-                            <img src="me.jpg" alt="Error 404 not found" style="box-shadow: 0 0 100px -40px var(--skin-color);">
+                            <img data-tilt src="me.jpg" alt="Error 404 not found" style="box-shadow: 0 0 100px -40px var(--skin-color);">
                         </div>
                     </div>
                 </div>
@@ -890,32 +890,32 @@
                         <div class="contact-info-item padd-15">
                                 <div class="icon">
                                     <div class="navigation">
-                                        <span style="--i:0;--x:-1;--y:0;">
-                                            <i class="fa-brands fa-instagram"></i>
+                                        <span class="instagram" style="--i:0;--x:-1;--y:0;">
+                                            <a href="https://www.instagram.com/aivana_bg" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
                                         </span>
-                                        <span style="--i:1;--x:1;--y:0;">
-                                            <i class="fa-brands fa-x-twitter"></i>
+                                        <span class="twitter" style="--i:1;--x:1;--y:0;">
+                                            <a href="https://x.com/AIVANA_OFC" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
                                         </span>
-                                        <span style="--i:2;--x:0;--y:-1;">
-                                            <i class="fa-brands fa-github"></i>
+                                        <span class="github" style="--i:2;--x:0;--y:-1;">
+                                            <a href="https://github.com/20Sunny" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                                         </span>
-                                        <span style="--i:3;--x:0;--y:1;">
-                                            <i class="fa-brands fa-telegram"></i>
+                                        <span class="telegram" style="--i:3;--x:0;--y:1;">
+                                            <a href="https://t.me/+hWhv6nib-ls3NzQ1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i></a>
                                         </span>
-                                        <span style="--i:4;--x:1;--y:1;">
-                                            <i class="fa-brands fa-facebook-f"></i>
+                                        <span class="facebook" style="--i:4;--x:1;--y:1;">
+                                            <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
                                         </span>
-                                        <span style="--i:5;--x:-1;--y:-1;">
-                                            <i class="fa-brands fa-whatsapp"></i>
+                                        <span class="whatsapp" style="--i:5;--x:-1;--y:-1;">
+                                            <a href="https://whatsapp.com/channel/0029VaAddLQ7oQhmSGPoaz3x" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
                                         </span>
-                                        <span style="--i:6;--x:0;--y:0;">
-                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        <span class="linkedin" style="--i:6;--x:0;--y:0;">
+                                            <a href="https://www.linkedin.com/in/20sunny" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
                                         </span>
-                                        <span style="--i:7;--x:-1;--y:1;">
-                                            <i class="fa-brands fa-snapchat"></i>
+                                        <span class="snapchat" style="--i:7;--x:-1;--y:1;">
+                                            <a href="https://www.snapchat.com/add/rishishwarsunny" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-snapchat"></i></a>
                                         </span>
-                                        <span style="--i:8;--x:1;--y:-1;">
-                                            <i class="fa-brands fa-threads"></i>
+                                        <span class="thread" style="--i:8;--x:1;--y:-1;">
+                                            <a href="https://www.threads.net/@aivana_bg" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-threads"></i></a>
                                         </span>
                                       </div>
                                 </div>
@@ -1044,7 +1044,6 @@ let myEmojis = [
     "🗿",
     "💀",
     "🌚",
-    "☠️",
     "🥵",
     "😈",
     "🤭",
@@ -1060,7 +1059,7 @@ let myEmojis = [
 ];
 let urlAnimate = () => {
     window.location.hash = myEmojis[Math.floor((Date.now() / 100) % myEmojis.length)];
-    setTimeout(urlAnimate, 300);
+    setTimeout(urlAnimate, 500);
 };
 
 urlAnimate(); // Start the animation
@@ -1084,6 +1083,8 @@ urlAnimate(); // Start the animation
   .navigation.active {
     width: 200px;
     background: var(--bg-black-100);
+    border: 2px solid var(--skin-color);
+    box-shadow: 0px 0px 10px var(--skin-color);
     height: 200px;
     transition-delay: 0s;
   }
@@ -1104,7 +1105,8 @@ urlAnimate(); // Start the animation
   .navigation.active span {
     width: 45px;
     height: 45px;
-    background: var(--bg-black-50);
+    background: var(--bg-black-900);
+    box-shadow: 0 0 10px 1px var(--bg-black-50);
     transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
   }
   
@@ -1112,15 +1114,17 @@ urlAnimate(); // Start the animation
     transition: 0.5s;
     font-size: 0px !important;
   }
+  /* .navigation.active span i:hover {
+    color: #2dfc52;
+    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52)
+      drop-shadow(0 0 15px #2dfc52);
+  } */
   
   .navigation.active span i {
     font-size: 20px !important;
     color: var(--skin-color);
   }
-  .navigation.active span:hover i {
-    color: #2dfc52;
-    filter: drop-shadow(0 0 2px #2dfc52) drop-shadow(0 0 5px #2dfc52)
-      drop-shadow(0 0 15px #2dfc52);
-  }</style>
+  
+  </style>
 <script src="./tilt.js"></script>
 </html>
