@@ -58,7 +58,7 @@ h3>.magic>.magic-star>svg>path {
 }
 
 h3>.magic>.magic-text {
-    animation: background-pan 3s linear infinite;
+    animation: background-pan 2s linear infinite;
     background: linear-gradient( to right, var(--purple), var(--violet), var(--pink), var(--purple));
     background-size: 200%;
     -webkit-background-clip: text;
@@ -68,7 +68,7 @@ h3>.magic>.magic-text {
 
 
 /* -- YouTube Link Styles -- */
-
+/* 
 #source-link {
     top: 60px;
 }
@@ -118,7 +118,7 @@ h3>.magic>.magic-text {
     color: white;
     font-family: "Rubik", sans-serif;
     transition: color 600ms;
-}
+} */
 
 
 .navigation {
